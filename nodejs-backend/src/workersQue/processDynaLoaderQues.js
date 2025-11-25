@@ -70,7 +70,7 @@ const createDynaLoaderJobWorker = (app) => {
             const dateParsed = Date.parse(row[dynaField.from]) || new Date();
             _data[field.fieldName] = new Date(dateParsed);
           } else {
-            console.debug(data);
+            console.log(data);
             // console.debug(dynaField, row[dynaField.from]);
             _data[field.fieldName] = row[dynaField.from] || null;
           }
